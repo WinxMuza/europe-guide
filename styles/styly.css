@@ -1,0 +1,213 @@
+body {
+    background-color: #f4f4f4;
+    color: #111111;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid #666666;
+}
+
+header {
+    background-color: #dde6f2;
+}
+
+nav {
+    background-color: #cfd8e6;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #e6e6e6;
+}
+
+section,
+article,
+aside {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #999999;
+    background-color: #fafafa;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #1b2c4a;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    text-indent: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    line-height: 1.4;
+}
+
+.eyebrow {
+    text-indent: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 0.8em;
+}
+
+nav a {
+    padding: 0.3em 0.5em;
+    border: 1px solid #6f86a0;
+    background-color: #eef3f9;
+    text-decoration: none;
+}
+
+nav a:link,
+a:link {
+    color: #0b4b8c;
+}
+
+nav a:visited,
+a:visited {
+    color: #6a3d8f;
+}
+
+nav a:hover,
+a:hover {
+    color: #b45100;
+    background-color: #fff0d9;
+}
+
+nav a:focus,
+a:focus {
+    color: #b45100;
+    background-color: #fff0d9;
+}
+
+nav a:active,
+a:active {
+    color: #ffffff;
+    background-color: #8a3f00;
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+    background-color: #fff0d0;
+}
+
+img {
+    border: 1px solid #666666;
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 1em 0;
+}
+
+figcaption,
+address,
+caption,
+li,
+dt,
+dd,
+summary,
+th,
+td {
+    font-size: 1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th,
+td {
+    border: 1px solid #666666;
+    padding: 0.4em;
+    text-align: left;
+}
+
+th {
+    background-color: #dde6f2;
+}
+
+caption {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+@media print {
+    body,
+    header,
+    nav,
+    main,
+    footer,
+    section,
+    article,
+    aside,
+    table,
+    th,
+    td,
+    img {
+        background-color: #ffffff;
+        color: #000000;
+        border-color: #000000;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #000000;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+
+    p,
+    li,
+    dt,
+    dd,
+    address,
+    figcaption,
+    caption,
+    th,
+    td,
+    blockquote,
+    summary,
+    a {
+        color: #000000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    a {
+        background-color: #ffffff;
+        text-decoration: underline;
+    }
+}
