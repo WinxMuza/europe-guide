@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Volodymyr Mykytenko">
-    <meta name="description" content="Practical travel advice for planning a journey through Europe.">
-    <meta name="keywords" content="Europe, travel tips, planning, links, glossary">
-    <title>Tourist Guide to Europe | Travel Tips</title>
     <link rel="stylesheet" href="styles/styly.css">
+    <meta name="description" content="Practical travel advice for planning a journey through Europe.">
+    <title>Tourist Guide to Europe | Travel Tips</title>
 </head>
-<body>
+<body class="site-tips">
     <header>
         <p class="eyebrow">Tourist Guide to Europe</p>
         <h1>Travel Tips</h1>
@@ -29,28 +28,50 @@
     </nav>
 
     <main>
-        <section>
-            <h2>Before the trip</h2>
-            <ul>
-                <li>Check the validity of travel documents.</li>
-                <li>Compare transport and accommodation options.</li>
-                <li>Prepare a realistic budget.</li>
-                <li>Save important addresses, tickets, and contact information.</li>
-            </ul>
-        </section>
+        <div class="content-column">
+            <section>
+                <h2>Before the trip</h2>
+                <ul>
+                    <li>Check the validity of travel documents.</li>
+                    <li>Compare transport and accommodation options.</li>
+                    <li>Prepare a realistic budget.</li>
+                    <li>Save important addresses, tickets, and contact information.</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Recommended planning process</h2>
-            <ol>
-                <li>Choose the destination or route.</li>
-                <li>Decide the dates and length of the stay.</li>
-                <li>Book transport and accommodation.</li>
-                <li>Prepare a list of priorities and places to visit.</li>
-                <li>Leave some free time for unexpected changes.</li>
-            </ol>
-        </section>
+            <section>
+                <h2>Recommended planning process</h2>
+                <ol>
+                    <li>Choose the destination or route.</li>
+                    <li>Decide the dates and length of the stay.</li>
+                    <li>Book transport and accommodation.</li>
+                    <li>Prepare a list of priorities and places to visit.</li>
+                    <li>Leave some free time for unexpected changes.</li>
+                </ol>
+            </section>
 
-        <aside>
+            <section>
+                <h2>Useful links</h2>
+                <p>
+                    Reliable sources are important for booking, route comparison, and general travel information.
+                </p>
+                <ul>
+                    <li><a href="https://europa.eu/">European Union portal</a></li>
+                    <li><a href="https://www.interrail.eu/">Interrail</a></li>
+                    <li><a href="https://www.rome2rio.com/">Rome2Rio</a></li>
+                    <li><a href="https://whc.unesco.org/">UNESCO World Heritage Centre</a></li>
+                </ul>
+                <details>
+                    <summary>Why are official sources useful?</summary>
+                    <p>
+                        Official websites provide current information about routes, prices, opening hours,
+                        and transport rules. They help reduce mistakes during planning.
+                    </p>
+                </details>
+            </section>
+        </div>
+
+        <aside class="side-column">
             <h2>Glossary</h2>
             <dl>
                 <dt>Itinerary</dt>
@@ -60,27 +81,10 @@
                 <dt>Budget travel</dt>
                 <dd>A style of travel focused on reducing costs while keeping the trip practical and enjoyable.</dd>
             </dl>
-        </aside>
-
-        <section>
-            <h2>Useful links</h2>
             <p>
-                Reliable sources are important for booking, route comparison, and general travel information.
+                This glossary is additional content, so it is placed in the side part of the layout.
             </p>
-            <ul>
-                <li><a href="https://europa.eu/">European Union portal</a></li>
-                <li><a href="https://www.interrail.eu/">Interrail</a></li>
-                <li><a href="https://www.rome2rio.com/">Rome2Rio</a></li>
-                <li><a href="https://whc.unesco.org/">UNESCO World Heritage Centre</a></li>
-            </ul>
-            <details>
-                <summary>Why are official sources useful?</summary>
-                <p>
-                    Official websites provide current information about routes, prices, opening hours,
-                    and transport rules. They help reduce mistakes during planning.
-                </p>
-            </details>
-        </section>
+        </aside>
     </main>
 
     <footer>
@@ -89,7 +93,7 @@
             Author: Volodymyr Mykytenko<br>
             E-mail: <a href="mailto:volodymyr.mykytenko@student.upjs.sk">volodymyr.mykytenko@student.upjs.sk</a>
         </address>
-        <p><a href="index.html">Back to home</a></p>
+        <p class="no-indent"><a href="index.html">Back to home</a></p>
     </footer>
 </body>
 </html>

@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Volodymyr Mykytenko">
-    <meta name="description" content="Famous cities in Europe with short descriptions and images.">
-    <meta name="keywords" content="Europe, cities, Paris, Rome, Vienna, Prague, Barcelona">
-    <title>Tourist Guide to Europe | Cities</title>
     <link rel="stylesheet" href="styles/styly.css">
+    <meta name="description" content="Famous cities in Europe with short descriptions and images.">
+    <title>Tourist Guide to Europe | Cities</title>
 </head>
-<body>
+<body class="site-cities">
     <header>
         <p class="eyebrow">Tourist Guide to Europe</p>
         <h1>Most Beautiful Cities</h1>
@@ -29,40 +28,48 @@
     </nav>
 
     <main>
-        <section>
-            <h2>City selection</h2>
-            <ol>
-                <li><strong>Paris</strong> – a city of boulevards, museums, and iconic monuments.</li>
-                <li><strong>Rome</strong> – a place where antiquity and modern life meet.</li>
-                <li><strong>Vienna</strong> – a capital of music, imperial architecture, and cafés.</li>
-                <li><strong>Prague</strong> – a city with a unique historical atmosphere.</li>
-                <li><strong>Barcelona</strong> – a Mediterranean city full of colour and creative architecture.</li>
-            </ol>
-        </section>
+        <div class="content-column">
+            <section>
+                <h2>City selection</h2>
+                <ol>
+                    <li><strong>Paris</strong> – a city of boulevards, museums, and iconic monuments.</li>
+                    <li><strong>Rome</strong> – a place where antiquity and modern life meet.</li>
+                    <li><strong>Vienna</strong> – a capital of music, imperial architecture, and cafés.</li>
+                    <li><strong>Prague</strong> – a city with a unique historical atmosphere.</li>
+                    <li><strong>Barcelona</strong> – a Mediterranean city full of colour and creative architecture.</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Urban tourism</h2>
-            <p>
-                A <dfn>city break</dfn> is usually a short stay focused on landmarks, walking routes,
-                and cultural experiences. It is especially popular among travellers who want to see a lot in a limited time.
-            </p>
-            <p>
-                Good city destinations usually offer efficient public transport, a walkable centre,
-                and a high concentration of museums, cafés, and public spaces.
-            </p>
-        </section>
+            <section class="card-list">
+                <h2>Urban tourism</h2>
+                <article>
+                    <h3>City break</h3>
+                    <p>
+                        A <dfn>city break</dfn> is usually a short stay focused on landmarks, walking routes,
+                        and cultural experiences. It is especially popular among travellers who want to see a lot in a limited time.
+                    </p>
+                </article>
+                <article>
+                    <h3>Walkable centres</h3>
+                    <p>
+                        Good city destinations usually offer efficient public transport, a walkable centre,
+                        and a high concentration of museums, cafés, and public spaces.
+                    </p>
+                </article>
+            </section>
+        </div>
 
-        <section class="gallery">
+        <aside class="side-column">
             <h2>Illustrations</h2>
             <figure>
-                <img src="obrazky/paris.jpg" alt="Stylised symbol of Paris with the Eiffel Tower">
+                <img src="obrazky/pariz.jpg" alt="Stylised symbol of Paris with the Eiffel Tower">
                 <figcaption>Paris is often seen as a symbol of European city tourism.</figcaption>
             </figure>
             <figure>
                 <img src="obrazky/wien.jpg" alt="Stylised symbol of Vienna architecture">
                 <figcaption>Vienna represents elegance, music, and historical urban culture.</figcaption>
             </figure>
-        </section>
+        </aside>
     </main>
 
     <footer>
@@ -71,7 +78,7 @@
             Author: Volodymyr Mykytenko<br>
             E-mail: <a href="mailto:volodymyr.mykytenko@student.upjs.sk">volodymyr.mykytenko@student.upjs.sk</a>
         </address>
-        <p><a href="tips.html">Continue to travel advice</a></p>
+        <p class="no-indent"><a href="tips.html">Continue to travel tips</a></p>
     </footer>
 </body>
 </html>

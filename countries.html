@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Volodymyr Mykytenko">
-    <meta name="description" content="Selected European countries with short descriptions and a comparison table.">
-    <meta name="keywords" content="Europe, countries, Italy, France, Spain, Austria">
-    <title>Tourist Guide to Europe | Countries</title>
     <link rel="stylesheet" href="styles/styly.css">
+    <meta name="description" content="Selected European countries with short descriptions and a comparison table.">
+    <title>Tourist Guide to Europe | Countries</title>
 </head>
-<body>
+<body class="site-countries">
     <header>
         <p class="eyebrow">Tourist Guide to Europe</p>
         <h1>Popular Countries</h1>
@@ -28,95 +27,97 @@
     </nav>
 
     <main>
-        <section>
-            <h2>Country profiles</h2>
+        <div class="content-column">
+            <section class="card-list">
+                <h2>Country profiles</h2>
+                <article>
+                    <h3>Italy</h3>
+                    <p>
+                        Italy is famous for ancient history, Renaissance art, regional cuisine, and cities such as Rome,
+                        Florence, and Venice. It appeals both to visitors interested in monuments and to people who prefer the sea.
+                    </p>
+                </article>
+                <article>
+                    <h3>France</h3>
+                    <p>
+                        France combines capital-city tourism with countryside routes, museums, gastronomy,
+                        and Atlantic or Mediterranean landscapes. For many tourists, Paris is only the beginning.
+                    </p>
+                </article>
+                <article>
+                    <h3>Spain</h3>
+                    <p>
+                        Spain is associated with sunny weather, major cities, festivals, and long coastlines.
+                        It is suitable for travellers looking for both urban culture and relaxation by the sea.
+                    </p>
+                </article>
+                <article>
+                    <h3>Austria</h3>
+                    <p>
+                        Austria is known for music, elegant architecture, Alpine scenery, and reliable transport.
+                        It is suitable for both winter and summer tourism.
+                    </p>
+                </article>
+            </section>
 
-            <article>
-                <h3>Italy</h3>
-                <p>
-                    Italy is famous for ancient history, Renaissance art, regional cuisine, and world-known cities such as Rome,
-                    Florence, and Venice. It appeals both to travellers who enjoy monuments and to visitors who prefer the sea.
-                </p>
-            </article>
+            <section>
+                <h2>Comparison table</h2>
+                <table>
+                    <caption>Basic comparison of selected destinations</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Country</th>
+                            <th scope="col">Capital</th>
+                            <th scope="col">Currency</th>
+                            <th scope="col">Official language</th>
+                            <th scope="col">Typical attraction</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Italy</td>
+                            <td>Rome</td>
+                            <td>Euro</td>
+                            <td>Italian</td>
+                            <td>Colosseum</td>
+                        </tr>
+                        <tr>
+                            <td>France</td>
+                            <td>Paris</td>
+                            <td>Euro</td>
+                            <td>French</td>
+                            <td>Eiffel Tower</td>
+                        </tr>
+                        <tr>
+                            <td>Spain</td>
+                            <td>Madrid</td>
+                            <td>Euro</td>
+                            <td>Spanish</td>
+                            <td>Sagrada Família</td>
+                        </tr>
+                        <tr>
+                            <td>Austria</td>
+                            <td>Vienna</td>
+                            <td>Euro</td>
+                            <td>German</td>
+                            <td>Schönbrunn Palace</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
 
-            <article>
-                <h3>France</h3>
-                <p>
-                    France combines capital-city tourism with countryside routes, museums, gastronomy, and Atlantic or Mediterranean landscapes.
-                    For many tourists, Paris is only the beginning of a much wider experience.
-                </p>
-            </article>
-
-            <article>
-                <h3>Spain</h3>
-                <p>
-                    Spain is associated with sunny weather, vibrant festivals, major cities, and long coastlines.
-                    It is a strong choice for travellers looking for both urban culture and rest by the sea.
-                </p>
-            </article>
-
-            <article>
-                <h3>Austria</h3>
-                <p>
-                    Austria is known for music, elegant architecture, Alpine scenery, and reliable transport.
-                    It is suitable for both winter and summer tourism.
-                </p>
-            </article>
-        </section>
-
-        <section>
-            <h2>Comparison table</h2>
-            <table>
-                <caption>Basic comparison of selected destinations</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Country</th>
-                        <th scope="col">Capital</th>
-                        <th scope="col">Currency</th>
-                        <th scope="col">Official language</th>
-                        <th scope="col">Typical attraction</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Italy</td>
-                        <td>Rome</td>
-                        <td>Euro</td>
-                        <td>Italian</td>
-                        <td>Colosseum</td>
-                    </tr>
-                    <tr>
-                        <td>France</td>
-                        <td>Paris</td>
-                        <td>Euro</td>
-                        <td>French</td>
-                        <td>Eiffel Tower</td>
-                    </tr>
-                    <tr>
-                        <td>Spain</td>
-                        <td>Madrid</td>
-                        <td>Euro</td>
-                        <td>Spanish</td>
-                        <td>Sagrada Família</td>
-                    </tr>
-                    <tr>
-                        <td>Austria</td>
-                        <td>Vienna</td>
-                        <td>Euro</td>
-                        <td>German</td>
-                        <td>Schönbrunn Palace</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>Country image</h2>
+        <aside class="side-column">
+            <h2>Related image</h2>
             <figure>
                 <img src="obrazky/taliansko-rim.jpg" alt="Stylised symbol of the Colosseum in Rome">
                 <figcaption>Rome represents one of the most recognisable travel symbols in Europe.</figcaption>
             </figure>
-        </section>
+            <p>
+                On wider screens this side column moves next to the main content.
+                On small screens it stays below the main content.
+            </p>
+        </aside>
     </main>
 
     <footer>
@@ -125,7 +126,7 @@
             Author: Volodymyr Mykytenko<br>
             E-mail: <a href="mailto:volodymyr.mykytenko@student.upjs.sk">volodymyr.mykytenko@student.upjs.sk</a>
         </address>
-        <p><a href="index.html">Return to the homepage</a></p>
+        <p class="no-indent"><a href="cities.html">Continue to cities</a></p>
     </footer>
 </body>
 </html>
