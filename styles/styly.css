@@ -10,6 +10,10 @@ section {
     display: block;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #f3f3f3;
@@ -25,7 +29,6 @@ footer {
     margin: 0.8em auto;
     padding: 1em;
     border: 1px solid #666666;
-    box-sizing: border-box;
 }
 
 header {
@@ -48,14 +51,18 @@ footer {
 .content-column,
 .side-column {
     width: 100%;
-    box-sizing: border-box;
 }
 
 section,
 article,
 aside {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 0 0 1em 0;
+    padding: 0.8em;
+    border: 1px solid #999999;
+    background-color: #fafafa;
+}
+
+.side-column {
     padding: 0.8em;
     border: 1px solid #999999;
     background-color: #fafafa;
@@ -81,18 +88,10 @@ h3 {
     font-size: 1.2em;
 }
 
-p {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    line-height: 1.4;
-    text-indent: 2em;
-}
-
+.site-description,
 .no-indent,
-.eyebrow,
 figcaption,
 caption,
-nav p,
 address,
 summary,
 li,
@@ -103,14 +102,20 @@ td {
     text-indent: 0;
 }
 
+p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    line-height: 1.4;
+    text-indent: 2em;
+}
+
 nav ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 nav li {
-    display: block;
     margin-bottom: 0.4em;
 }
 
@@ -122,26 +127,26 @@ nav a {
     text-decoration: none;
 }
 
-nav a:link,
-a:link {
+a:link,
+nav a:link {
     color: #0b4b8c;
 }
 
-nav a:visited,
-a:visited {
+a:visited,
+nav a:visited {
     color: #6a3d8f;
 }
 
-nav a:hover,
 a:hover,
-nav a:focus,
-a:focus {
+a:focus,
+nav a:hover,
+nav a:focus {
     color: #b45100;
     background-color: #fff0d9;
 }
 
-nav a:active,
-a:active {
+a:active,
+nav a:active {
     color: #ffffff;
     background-color: #8a3f00;
 }
@@ -183,10 +188,6 @@ caption {
     font-weight: bold;
 }
 
-.card-list article {
-    margin-bottom: 1em;
-}
-
 @media screen and (min-width: 700px) {
     header,
     nav,
@@ -204,24 +205,6 @@ caption {
     nav a {
         display: inline-block;
     }
-
-    .card-list article {
-        float: left;
-        width: 48%;
-        margin-right: 2%;
-        box-sizing: border-box;
-        min-height: 11em;
-    }
-
-    .card-list article:nth-child(2n) {
-        margin-right: 0;
-    }
-
-    .card-list::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -235,18 +218,12 @@ caption {
 
     .content-column {
         float: left;
-        width: 69%;
+        width: 68%;
     }
 
     .side-column {
         float: right;
-        width: 28%;
-    }
-
-    .site-home .card-list article,
-    .site-countries .card-list article,
-    .site-cities .card-list article {
-        min-height: 12em;
+        width: 29%;
     }
 }
 
@@ -259,6 +236,7 @@ caption {
     section,
     article,
     aside,
+    .side-column,
     table,
     th,
     td,
