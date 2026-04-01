@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Volodymyr Mykytenko">
-    <meta name="description" content="Selected European countries and a simple travel comparison table.">
+    <meta name="description" content="Selected European countries and a simple comparison table.">
     <link rel="stylesheet" href="styles/styly.css">
-    <title>Tourist Guide to Europe - Countries</title>
+    <title>Tourist Guide to Europe | Countries</title>
 </head>
 <body>
     <header>
@@ -24,87 +24,99 @@
     </nav>
 
     <main>
-        <div class="content-column">
-            <section>
+        <div class="primary-column">
+            <section class="content-box">
                 <h2>Popular countries</h2>
-                <article>
-                    <h3>Italy</h3>
-                    <p>Italy is famous for ancient history, art, regional cuisine and cities such as Rome, Florence and Venice.</p>
-                </article>
-                <article>
-                    <h3>France</h3>
-                    <p>France combines museums, famous monuments, gastronomy and different regions from Paris to the coast.</p>
-                </article>
-                <article>
-                    <h3>Spain</h3>
-                    <p>Spain is known for sunny weather, colourful cities, festivals and long coastlines.</p>
-                </article>
-                <article>
-                    <h3>Austria</h3>
-                    <p>Austria offers elegant cities, mountain scenery, music and good public transport.</p>
-                </article>
+                <div class="card-grid">
+                    <article class="country-card">
+                        <h3>Italy</h3>
+                        <p>Italy is known for ancient monuments, Renaissance art, regional food and famous cities such as Rome, Florence and Venice.</p>
+                    </article>
+                    <article class="country-card">
+                        <h3>France</h3>
+                        <p>France offers museums, historical monuments, elegant city streets, coastal regions and a strong culinary tradition.</p>
+                    </article>
+                    <article class="country-card">
+                        <h3>Spain</h3>
+                        <p>Spain combines warm weather, colourful cities, local festivals and coastal tourism with interesting architecture.</p>
+                    </article>
+                    <article class="country-card">
+                        <h3>Austria</h3>
+                        <p>Austria is attractive for visitors who enjoy imperial architecture, mountain scenery, music and efficient transport.</p>
+                    </article>
+                </div>
             </section>
 
-            <section>
+            <section class="table-box">
                 <h2>Comparison table</h2>
-                <table>
-                    <caption>Basic information about selected destinations</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Country</th>
-                            <th scope="col">Capital</th>
-                            <th scope="col">Currency</th>
-                            <th scope="col">Language</th>
-                            <th scope="col">Attraction</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Italy</td>
-                            <td>Rome</td>
-                            <td>Euro</td>
-                            <td>Italian</td>
-                            <td>Colosseum</td>
-                        </tr>
-                        <tr>
-                            <td>France</td>
-                            <td>Paris</td>
-                            <td>Euro</td>
-                            <td>French</td>
-                            <td>Eiffel Tower</td>
-                        </tr>
-                        <tr>
-                            <td>Spain</td>
-                            <td>Madrid</td>
-                            <td>Euro</td>
-                            <td>Spanish</td>
-                            <td>Sagrada Família</td>
-                        </tr>
-                        <tr>
-                            <td>Austria</td>
-                            <td>Vienna</td>
-                            <td>Euro</td>
-                            <td>German</td>
-                            <td>Schönbrunn Palace</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-wrap">
+                    <table>
+                        <caption>Basic information about selected destinations</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Country</th>
+                                <th scope="col">Capital</th>
+                                <th scope="col">Currency</th>
+                                <th scope="col">Language</th>
+                                <th scope="col">Typical attraction</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Italy</td>
+                                <td>Rome</td>
+                                <td>Euro</td>
+                                <td>Italian</td>
+                                <td>Colosseum</td>
+                            </tr>
+                            <tr>
+                                <td>France</td>
+                                <td>Paris</td>
+                                <td>Euro</td>
+                                <td>French</td>
+                                <td>Eiffel Tower</td>
+                            </tr>
+                            <tr>
+                                <td>Spain</td>
+                                <td>Madrid</td>
+                                <td>Euro</td>
+                                <td>Spanish</td>
+                                <td>Sagrada Família</td>
+                            </tr>
+                            <tr>
+                                <td>Austria</td>
+                                <td>Vienna</td>
+                                <td>Euro</td>
+                                <td>German</td>
+                                <td>Schönbrunn Palace</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
 
         <aside class="side-column">
-            <h2>Illustration</h2>
-            <figure>
-                <img src="obrazky/taliansko-rim.jpg" alt="Stylised symbol of the Colosseum in Rome">
-                <figcaption>Rome is one of the best-known tourist destinations in Europe.</figcaption>
-            </figure>
+            <section class="sidebar-box">
+                <h2>Illustration</h2>
+                <figure>
+                    <img src="obrazky/taliansko-rim.jpg" alt="Stylised symbol of the Colosseum in Rome">
+                    <figcaption>Rome is one of the best-known tourist destinations in Europe.</figcaption>
+                </figure>
+            </section>
+
+            <section class="sidebar-box">
+                <h2>Short note</h2>
+                <p class="no-indent">Different countries can be combined in one journey because distances are shorter than on many other continents.</p>
+            </section>
         </aside>
     </main>
 
     <footer>
         <address>
             Volodymyr Mykytenko<br>
-            <a href="mailto:volodymyr.mykytenko@student.upjs.sk">volodymyr.mykytenko@student.upjs.sk</a>
+            <a href="mailto:volodymyr.mykytenko@student.upjs.sk">volodymyr.mykytenko@student.upjs.sk</a><br>
+            Košice, Slovakia
         </address>
     </footer>
 </body>

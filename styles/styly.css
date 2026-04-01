@@ -16,9 +16,10 @@ section {
 
 body {
     margin: 0;
-    background-color: #f3f3f3;
-    color: #111111;
+    background-color: #edf1f5;
+    color: #21303d;
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 header,
@@ -26,46 +27,28 @@ nav,
 main,
 footer {
     width: 94%;
-    margin: 0.8em auto;
-    padding: 1em;
-    border: 1px solid #666666;
+    max-width: 1120px;
+    margin: 1em auto;
+    border: 1px solid #c8d1db;
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #dbe5f0;
+    padding: 1.6em 1.4em;
+    border-top: 5px solid #315f8d;
 }
 
 nav {
-    background-color: #cfd8e6;
+    padding: 0.9em 1.1em;
 }
 
 main {
-    background-color: #ffffff;
-    overflow: hidden;
+    padding: 1em;
 }
 
 footer {
-    background-color: #e6e6e6;
-}
-
-.content-column,
-.side-column {
-    width: 100%;
-}
-
-section,
-article,
-aside {
-    margin: 0 0 1em 0;
-    padding: 0.8em;
-    border: 1px solid #999999;
-    background-color: #fafafa;
-}
-
-.side-column {
-    padding: 0.8em;
-    border: 1px solid #999999;
-    background-color: #fafafa;
+    padding: 1em 1.2em;
+    background-color: #f7f9fb;
 }
 
 h1,
@@ -73,23 +56,25 @@ h2,
 h3 {
     margin-top: 0;
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #1b2c4a;
+    color: #223f63;
 }
 
 h1 {
-    font-size: 2em;
+    margin-bottom: 0.25em;
+    font-size: 2.1em;
 }
 
 h2 {
-    font-size: 1.5em;
+    margin-bottom: 0.6em;
+    font-size: 1.55em;
 }
 
 h3 {
+    margin-bottom: 0.45em;
     font-size: 1.2em;
 }
 
 .site-description,
-.no-indent,
 figcaption,
 caption,
 address,
@@ -98,94 +83,165 @@ li,
 dt,
 dd,
 th,
-td {
+td,
+.no-indent {
     text-indent: 0;
 }
 
+.site-description {
+    margin: 0;
+    color: #4c6074;
+}
+
 p {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    line-height: 1.4;
-    text-indent: 2em;
+    margin-top: 0.55em;
+    margin-bottom: 0.95em;
+    text-indent: 1.8em;
+}
+
+blockquote {
+    margin: 1em 0;
+    padding: 0.8em 1em;
+    border-left: 4px solid #89a6c3;
+    background-color: #f5f8fb;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
 }
 
 nav li {
-    margin-bottom: 0.4em;
+    margin: 0 0 0.5em 0;
 }
 
 nav a {
     display: block;
-    padding: 0.5em 0.7em;
-    border: 1px solid #6f86a0;
-    background-color: #eef3f9;
+    padding: 0.55em 0.9em;
+    border: 1px solid #b8c6d6;
+    background-color: #f4f7fb;
+    color: #234f7a;
     text-decoration: none;
 }
 
-a:link,
-nav a:link {
-    color: #0b4b8c;
+a:link {
+    color: #234f7a;
 }
 
-a:visited,
-nav a:visited {
-    color: #6a3d8f;
+a:visited {
+    color: #6b4c8f;
 }
 
 a:hover,
-a:focus,
-nav a:hover,
-nav a:focus {
-    color: #b45100;
-    background-color: #fff0d9;
+a:focus {
+    color: #8a4d00;
+    background-color: #fff3dc;
 }
 
-a:active,
-nav a:active {
+a:active {
     color: #ffffff;
-    background-color: #8a3f00;
+    background-color: #a05b10;
 }
 
 nav a[aria-current="page"] {
-    font-weight: bold;
-    background-color: #fff0d0;
+    color: #ffffff;
+    border-color: #315f8d;
+    background-color: #315f8d;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #666666;
+.intro,
+.sidebar-box,
+.content-box,
+.country-card,
+.city-card,
+.tip-card,
+.table-box {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #d3dce6;
+    background-color: #fbfcfd;
+}
+
+.intro {
+    background-color: #f8fbff;
+}
+
+.feature-grid article,
+.card-grid article {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #d3dce6;
+    background-color: #ffffff;
+}
+
+.feature-grid p,
+.card-grid p,
+.sidebar-box p {
+    text-indent: 0;
 }
 
 figure {
-    margin: 1em 0;
+    margin: 1em 0 0 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #bcc7d3;
+    background-color: #ffffff;
+}
+
+figcaption {
+    margin-top: 0.5em;
+    color: #5c6d7f;
+}
+
+ul,
+ol,
+dl {
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    padding-left: 1.4em;
+}
+
+dd {
+    margin-bottom: 0.6em;
+}
+
+.table-wrap {
+    overflow-x: auto;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1em;
+    margin-top: 0.8em;
+    background-color: #ffffff;
 }
 
 th,
 td {
-    border: 1px solid #666666;
-    padding: 0.4em;
+    border: 1px solid #bcc7d3;
+    padding: 0.55em;
     text-align: left;
+    vertical-align: top;
 }
 
 th {
-    background-color: #dde6f2;
+    background-color: #e8eff6;
 }
 
 caption {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.45em;
     font-weight: bold;
+    color: #223f63;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -198,25 +254,48 @@ caption {
 
     nav li {
         display: inline-block;
-        margin-right: 0.5em;
-        margin-bottom: 0;
+        margin: 0 0.55em 0 0;
     }
 
     nav a {
         display: inline-block;
     }
+
+    .feature-grid,
+    .card-grid {
+        font-size: 0;
+    }
+
+    .feature-grid article,
+    .card-grid article {
+        display: inline-block;
+        width: 48.5%;
+        margin-right: 3%;
+        vertical-align: top;
+        font-size: 1rem;
+    }
+
+    .feature-grid article:nth-child(2n),
+    .card-grid article:nth-child(2n) {
+        margin-right: 0;
+    }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1020px) {
     header,
     nav,
     main,
     footer {
         width: 88%;
-        max-width: 1200px;
     }
 
-    .content-column {
+    main::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .primary-column {
         float: left;
         width: 68%;
     }
@@ -224,6 +303,11 @@ caption {
     .side-column {
         float: right;
         width: 29%;
+    }
+
+    .feature-grid article,
+    .card-grid article {
+        width: 48.2%;
     }
 }
 
@@ -233,10 +317,15 @@ caption {
     nav,
     main,
     footer,
-    section,
-    article,
-    aside,
-    .side-column,
+    .intro,
+    .sidebar-box,
+    .content-box,
+    .country-card,
+    .city-card,
+    .tip-card,
+    .table-box,
+    .feature-grid article,
+    .card-grid article,
     table,
     th,
     td,
@@ -244,6 +333,7 @@ caption {
         color: #000000;
         background-color: #ffffff;
         border-color: #000000;
+        box-shadow: none;
     }
 
     h1,
@@ -258,19 +348,15 @@ caption {
     dt,
     dd,
     address,
-    figcaption,
-    caption,
-    th,
     td,
-    blockquote,
-    summary,
-    a {
-        color: #000000;
+    th,
+    figcaption,
+    caption {
         font-family: Georgia, "Times New Roman", Times, serif;
     }
 
     nav a {
+        color: #000000;
         background-color: #ffffff;
-        text-decoration: underline;
     }
 }
